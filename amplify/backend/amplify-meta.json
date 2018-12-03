@@ -1,0 +1,32 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "serverlessreactapp-20181203221303-authRole",
+			"UnauthRoleArn": "arn:aws:iam::825807896075:role/serverlessreactapp-20181203221303-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::825807896075:role/serverlessreactapp-20181203221303-authRole",
+			"Region": "ap-southeast-2",
+			"DeploymentBucketName": "serverlessreactapp-20181203221303-deployment",
+			"UnauthRoleName": "serverlessreactapp-20181203221303-unauthRole",
+			"StackName": "serverlessreactapp-20181203221303",
+			"StackId": "arn:aws:cloudformation:ap-southeast-2:825807896075:stack/serverlessreactapp-20181203221303/8cc9c250-f705-11e8-88aa-0a8fa6fe2426"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/serverlessreactapp-20181203221303-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-12-03T14:20:24.882Z",
+			"output": {
+				"S3BucketSecureURL": "https://serverlessreactapp-20181203221726--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://serverlessreactapp-20181203221726--hostingbucket.s3-website-ap-southeast-2.amazonaws.com",
+				"Region": "ap-southeast-2",
+				"HostingBucketName": "serverlessreactapp-20181203221726--hostingbucket"
+			},
+			"lastPushDirHash": "FzjjxV+6vXZP8XLUqvuGOS6/1Bo="
+		}
+	}
+}
